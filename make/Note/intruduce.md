@@ -1,0 +1,9 @@
+## 2.1 What a Rule Looks Like
+A simple makefile consists of `“rules”` with the following shape:
+
+```
+target … : prerequisites …
+        recipe
+        …
+        …
+```
