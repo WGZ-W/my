@@ -1,6 +1,0 @@
-
-
-查看文件内容：
-	
-
-	$ less	filename
