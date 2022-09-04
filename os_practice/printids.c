@@ -2,6 +2,7 @@
 #include "apue.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 
 pthread_t ntid;
 
