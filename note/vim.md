@@ -8,10 +8,10 @@
 
 <!-- more -->
 
-[Search and repalce](#search-and-replace)  
-[Reading input](#reading-input)  
-[Multiple files](#multiple-files)  
-[Setting options](#setting-optionsvimrc)
+- [1. Search and repalce](#search-and-replace)  
+- [2. Reading input](#reading-input)  
+- [3. Multiple files](#multiple-files)  
+- [4. Setting options](#setting-optionsvimrc)
 
 
 ## Search and replace
