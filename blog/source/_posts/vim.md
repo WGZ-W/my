@@ -5,7 +5,7 @@ tags:
 ---
 
 
-# VIM  <!-- more -->
+<!-- more -->
 
 ## Search and replace
 ```
