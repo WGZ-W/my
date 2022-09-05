@@ -1,12 +1,18 @@
 ---
-title: VIM
-date: 2022-09-05 12:29:40
-tags:
+   title: VIM
+   date: 2022-09-05 12:29:40
+   tags:
 ---
 
-一些vim的基础用法。
+一些vim的基础用法
 
 <!-- more -->
+
+[Search and repalce](#search-and-replace)  
+[Reading input](#reading-input)  
+[Multiple files](#multiple-files)  
+[Setting options](#setting-optionsvimrc)
+
 
 ## Search and replace
 ```
