@@ -1,9 +1,10 @@
 ---
-title: vim
+title: VIM
 date: 2022-09-05 12:29:40
 tags:
 ---
 
+一些vim的基础用法。
 
 <!-- more -->
 
