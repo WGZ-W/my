@@ -4,6 +4,7 @@ date: 2022-09-05 15:00:48
 tags:
 ---
 
+<!--more-->
 
 ## how to compile the .c file with "apue.h"
 ```
