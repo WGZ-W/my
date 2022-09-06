@@ -365,7 +365,18 @@ code {
           : 'default'
     });
   </script>
+<ul>
+<li><a href="#%E5%BC%80%E5%A7%8B%E8%B0%83%E8%AF%95">开始调试</a></li>
+<li><a href="#%E9%80%80%E5%87%BA%E6%AD%A3%E5%9C%A8%E8%B0%83%E8%AF%95%E7%9A%84%E5%87%BD%E6%95%B0">退出正在调试的函数</a></li>
+</ul>
+<h2 id="%E5%BC%80%E5%A7%8B%E8%B0%83%E8%AF%95">开始调试</h2>
 <pre class="hljs"><code><div>(gdb) start     从头开始调试 
+</div></code></pre>
+<h2 id="%E9%80%80%E5%87%BA%E6%AD%A3%E5%9C%A8%E8%B0%83%E8%AF%95%E7%9A%84%E5%87%BD%E6%95%B0">退出正在调试的函数</h2>
+<pre class="hljs"><code><div>(gdb) finish    函数继续执行完，打印返回值
+
+(gdb) return    不继续执行，直接返回
+(gdb) return exp    修改函数的返回值
 </div></code></pre>
 
 </body>
