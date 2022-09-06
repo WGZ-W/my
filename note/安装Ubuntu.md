@@ -17,7 +17,7 @@
 
 ## 先修改 root 密码
 ```
-    sudo passwd
+    $> sudo passwd
 ```
 ## 再修改安装包镜像源：  
 - Software & Update
@@ -30,7 +30,7 @@
 
 ## 实现 Git 和 GitHub 的 SSH 连接
 ```
-    ssh-keygen -t rsa -C "email"
+    $> ssh-keygen -t rsa -C "email"
 ```
 
 
