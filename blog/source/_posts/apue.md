@@ -4,7 +4,9 @@ date: 2022-09-05 15:00:48
 tags:
 ---
 
-<!--more-->
+使用 apue.h 所需要的库
+
+<!-- more -->
 
 ## how to compile the .c file with "apue.h"
 ```
