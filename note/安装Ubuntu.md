@@ -1,7 +1,7 @@
 ---
-title: 安装Ubuntu
-date: 2022-09-06 12:12:16
-tags:
+    title: 安装Ubuntu
+    date: 2022-09-06 12:12:16
+    tags:
 ---
 
 我自己安装 Ubuntu 进行的配置

@@ -1,10 +1,10 @@
 ---
-title: APUE
-date: 2022-09-05 15:00:48
-tags:
+    title: APUE
+    date: 2022-09-05 15:00:48
+    tags:
 ---
 
-使用 apue.h 进行编译所需要的库
+使用 apue.h 所需要的库
 
 <!-- more -->
 
