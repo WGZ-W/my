@@ -366,13 +366,20 @@ code {
     });
   </script>
 <p>使用 apue.h 所需要的库</p>
-<!-- more -->
 <h2 id="how-to-compile-the-c-file-with-%22apueh%22">how to compile the .c file with &quot;apue.h&quot;</h2>
 <pre class="hljs"><code><div>  gcc myls.c -I ~/apue/apue.3e/include -L ~/apue/apue.3e/lib -lapue
 </div></code></pre>
+<ul>
+<li>
 <p>-I means specifying the directory to search the include &quot;file&quot;.</p>
+</li>
+<li>
 <p>-L means specifying the directory to search the libraries.</p>
+</li>
+<li>
 <p>-llibrary is to search the liblibrary.a or liblibrary.so file.</p>
+</li>
+</ul>
 
 </body>
 </html>
