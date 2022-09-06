@@ -10,7 +10,8 @@
 
 ## how to compile the .c file with "apue.h"
 ```
-  gcc myls.c -I ~/apue/apue.3e/include -L ~/apue/apue.3e/lib -lapue
+    $> gcc myls.c -I ~/apue/apue.3e/include \ 
+    -L ~/apue/apue.3e/lib -lapue
 ```
 
 - -I means specifying the directory to search the include "file".  

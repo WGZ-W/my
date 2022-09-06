@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>apue.md</title>
+<title>make.md</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 
 <style>
@@ -365,22 +365,24 @@ code {
           : 'default'
     });
   </script>
-<p>使用 apue.h 所需要的库</p>
-<h2 id="how-to-compile-the-c-file-with-%22apueh%22">how to compile the .c file with &quot;apue.h&quot;</h2>
-<pre class="hljs"><code><div>    $&gt; gcc myls.c -I ~/apue/apue.3e/include \ 
-    -L ~/apue/apue.3e/lib -lapue
-</div></code></pre>
 <ul>
-<li>
-<p>-I means specifying the directory to search the include &quot;file&quot;.</p>
-</li>
-<li>
-<p>-L means specifying the directory to search the libraries.</p>
-</li>
-<li>
-<p>-llibrary is to search the liblibrary.a or liblibrary.so file.</p>
-</li>
+<li><a href="#%E8%87%AA%E5%8A%A8%E5%8F%98%E9%87%8F">自动变量</a></li>
+<li><a href="#%E6%A8%A1%E5%BC%8F%E8%A7%84%E5%88%99">模式规则</a></li>
 </ul>
+<h2 id="%E8%87%AA%E5%8A%A8%E5%8F%98%E9%87%8F">自动变量</h2>
+<pre class="hljs"><code><div>demo.o : demo.c
+    gcc $&lt; -o $@
+
+$&lt; ：第一个条件
+$@ ：目标
+</div></code></pre>
+<h2 id="%E6%A8%A1%E5%BC%8F%E8%A7%84%E5%88%99">模式规则</h2>
+<pre class="hljs"><code><div>% : %.c
+    gcc $&lt; -o $@
+
+使用方法：
+    make test（有 test.c）
+</div></code></pre>
 
 </body>
 </html>
