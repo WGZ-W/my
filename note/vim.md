@@ -12,7 +12,7 @@
 - [2. 读入其他文件](#reading-input)  
 - [3. 编辑多个文件](#multiple-files)  
 - [4. 设置参数](#setting-optionsvimrc)
-
+- [5. 自动补全](#Automatic-Completion)
 
 ## Search and replace
 ```
@@ -53,6 +53,19 @@
 
     set relativenumber  设置相对的行号（比较nb）
 
-    
 ```
+
+## Automatic Completion
+- Ctrl-P			向上文搜索
+- Ctrl-N			向下文搜索
+- Ctrl-X			选择搜索类型
+	- Ctrl-D	宏定义包括 include 文件
+	- Ctrl-I	当前文件和 include 文件
+	- Ctrl-F	查找文件名字，当前目录中
+	- Ctrl-L	复制当前文件中的一行
+#  
+- :set ignorecase		设置补全忽略大小写
+- :set infercase		推断补全的大小写，不只是匹配
+- :set complete=.,d,i,w,u,b,t		设置补全的范围
+- :set dictionary=file,file,...	指定搜索目录
 
