@@ -12,7 +12,7 @@
 - [2. 读入其他文件](#reading-input)  
 - [3. 编辑多个文件](#multiple-files)  
 - [4. 设置参数](#setting-optionsvimrc)
-- [5. 自动补全](#Automatic-Completion)
+- [5. 自动补全](#automatic-completion)
 
 ## Search and replace
 ```
