@@ -56,23 +56,6 @@
 ```
 
 ## Automatic Completion
-<<<<<<< HEAD
-- Ctrl-P
-- Ctrl-N
-- Ctrl-X
-  - Ctrl-D
-  - Ctrl-F
-  - Ctrl-L
-  - Ctrl-I
-
-
-```
-  :set infercase
-  :set complete
-  :set ignorecase
-  :set dictionary=
-
-=======
 - Ctrl-P	    	向上文搜索
 - `Ctrl-N`			向下文搜索
 - `Ctrl-X`			选择搜索类型
@@ -85,5 +68,4 @@
  :set infercase		推断补全的大小写，不只是匹配
  :set complete=.,d,i,w,u,b,t		设置补全的范围
  :set dictionary=file,file,...	    指定搜索目录
->>>>>>> b2673be9b645a3ac45bdaa98bc55ea053622e98a
 ```
