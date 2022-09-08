@@ -40,7 +40,8 @@ void *count(void *filename)
 				c = fgetc(fp);
 				continue;
 			}
-			while (pthread_mutex_lock(&mutex) != 0);
+			// while (pthread_mutex_lock(&mutex) != 0);
+			pthread_mutex_lock(&mutex);
 			mp[w]++;
 			cnt++;
 			w = "";
