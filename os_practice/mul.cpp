@@ -7,6 +7,7 @@
 #include <pthread.h>
 #include <stdlib.h>
 #include <algorithm>
+#include <time.h>
 
 using namespace std;
 
@@ -25,28 +26,26 @@ pthread_mutex_t mutex;
 map <string, int> mp;
 void *count(void *filename)
 {
-	char *file = (char *)filename;
-	FILE *fp = fopen(file, "r");
+	FILE *fp;
+	if ((fp = fopen((char *)filename, "r")) == NULL ){
+			fprintf(stderr, "Can't open %s\n", (char *)filename);
+			exit(EXIT_FAILURE);
+	}
 	char c;
 	string w = "";
-	int i = fscanf(fp, "%c", &c);
-
-	while (i != EOF){
+	while (fscanf(fp, "%c", &c) != EOF){
 		if (isalpha(c))
 			w += c;
 		else {
-			if (w == ""){
-				 i = fscanf(fp, "%c", &c);
+			if (w == "")
 				continue;
-			}
+			
 			pthread_mutex_lock(&mutex);
 			mp[w]++;
 			cnt++;
 			w = "";
 			pthread_mutex_unlock(&mutex);
 		}
-		
-		i = fscanf(fp, "%c", &c);
 	}
 	fclose(fp);
 
@@ -56,6 +55,8 @@ void *count(void *filename)
 
 int main(int argc, char *argv[])
 {
+	clock_t start_clock = clock();
+
 	cnt = 0;
 	pthread_t tid[100];
 	pthread_mutex_init(&mutex, NULL);
@@ -77,7 +78,14 @@ int main(int argc, char *argv[])
 	}
 	sort(v.begin(), v.end(), cmp);
 
-	for (int i = 0; i <= v.size(); i++){
+//	for (int i = 0; i <= v.size(); i++){
+	for (int i = 0; i <= 10; i++){
 		cout << v[i].str << " " << v[i].nu << endl; 
 	}				
+
+	printf("Processor time used: %g sec.\n",
+			(clock() - start_clock) / (double) CLOCKS_PER_SEC);
+
+	return 0;
+
 }	
